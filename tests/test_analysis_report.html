@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Results Report</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .header { text-align: center; color: #333; border-bottom: 2px solid #eee; padding-bottom: 20px; }
+        .summary { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+        .metric { background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center; border-left: 4px solid #007bff; }
+        .metric.passed { border-left-color: #28a745; }
+        .metric.failed { border-left-color: #dc3545; }
+        .metric.skipped { border-left-color: #ffc107; }
+        .suite { margin: 20px 0; padding: 15px; border-radius: 8px; background: #f8f9fa; }
+        .suite-header { font-weight: bold; margin-bottom: 10px; }
+        .test-case { padding: 8px; margin: 5px 0; border-radius: 4px; }
+        .test-case.passed { background: #d4edda; color: #155724; }
+        .test-case.failed { background: #f8d7da; color: #721c24; }
+        .test-case.error { background: #f8d7da; color: #721c24; }
+        .test-case.skipped { background: #fff3cd; color: #856404; }
+        .status-indicator { font-size: 24px; margin: 20px 0; text-align: center; }
+        .timestamp { color: #666; font-size: 12px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🧪 Test Results Report</h1>
+            <p class="timestamp">Generated: 2025-10-26 22:22:52</p>
+        </div>
+
+        <div class="status-indicator" style="color: #28a745;">
+            <h2>🎉 ALL TESTS PASSING!</h2>
+        </div>
+        
+        <div class="summary">
+            <div class="metric">
+                <h3>11</h3>
+                <p>Total Tests</p>
+            </div>
+            <div class="metric passed">
+                <h3>11</h3>
+                <p>Passed (100.0%)</p>
+            </div>
+            <div class="metric failed">
+                <h3>0</h3>
+                <p>Failed</p>
+            </div>
+            <div class="metric failed">
+                <h3>0</h3>
+                <p>Errors</p>
+            </div>
+            <div class="metric skipped">
+                <h3>0</h3>
+                <p>Skipped</p>
+            </div>
+            <div class="metric">
+                <h3>0.85s</h3>
+                <p>Total Time</p>
+            </div>
+        </div>
+
+        <div class="suite">
+            <div class="suite-header">
+                📋 UNIT Suite - 11 tests, 11 passed, 0 failed, 0 errors
+            </div>
+
+            <div class="test-case passed">
+                ✅ test_model_loading_success (0.096s)
+</div>
+            <div class="test-case passed">
+                ✅ test_model_loading_failure (0.001s)
+</div>
+            <div class="test-case passed">
+                ✅ test_predict_price_logic (0.006s)
+</div>
+            <div class="test-case passed">
+                ✅ test_feature_engineering (0.003s)
+</div>
+            <div class="test-case passed">
+                ✅ test_batch_predict_logic (0.003s)
+</div>
+            <div class="test-case passed">
+                ✅ test_house_prediction_request_validation (0.001s)
+</div>
+            <div class="test-case passed">
+                ✅ test_prediction_response_structure (0.001s)
+</div>
+            <div class="test-case passed">
+                ✅ test_data_type_conversion (0.001s)
+</div>
+            <div class="test-case passed">
+                ✅ test_positive_number_validation (0.001s)
+</div>
+            <div class="test-case passed">
+                ✅ test_categorical_validation (0.001s)
+</div>
+            <div class="test-case passed">
+                ✅ test_year_validation (0.001s)
+</div></div>
+    </div>
+</body>
+</html>

@@ -4,8 +4,8 @@ from datetime import datetime
 from schemas import HousePredictionRequest, PredictionResponse
 
 # Load model and preprocessor
-MODEL_PATH = "models/trained/house_price_model.pkl"
-PREPROCESSOR_PATH = "models/trained/preprocessor.pkl"
+MODEL_PATH = "../../models/trained/house_price_model.pkl"
+PREPROCESSOR_PATH = "../../models/trained/preprocessor.pkl"
 
 try:
     model = joblib.load(MODEL_PATH)

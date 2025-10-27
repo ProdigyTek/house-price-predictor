@@ -1,0 +1,37 @@
+# Test Dependencies for House Price Prediction Project
+# These are additional packages required for running the test suite
+
+# Core testing framework
+pytest>=8.0.0              # Main testing framework
+pytest-cov>=6.0.0          # Code coverage plugin
+pytest-mock>=4.0.0         # Mocking utilities
+pytest-timeout>=2.1.0      # Test timeout handling
+pytest-html>=4.1.1         # HTML test reports
+pytest-xdist>=3.6.0        # Parallel test execution
+
+# API and HTTP testing
+requests>=2.32.0           # HTTP client for API testing
+httpx>=0.27.0              # Async HTTP client
+responses>=0.25.0          # HTTP request mocking
+
+# Docker testing support
+docker>=7.1.0              # Docker client for container testing
+testcontainers>=4.8.0      # Container lifecycle management
+
+# Data validation and testing
+pydantic>=2.10.0           # Data validation (should match main requirements)
+faker>=33.1.0              # Test data generation
+factory-boy>=3.3.1         # Test object factories
+
+# Performance and load testing
+locust>=2.31.8             # Load testing framework (optional)
+memory-profiler>=0.61.0    # Memory usage profiling
+
+# Test reporting and analysis
+coverage>=7.6.0            # Coverage measurement
+pytest-benchmark>=4.0.0    # Performance benchmarking
+allure-pytest>=2.14.0      # Advanced test reporting (optional)
+
+# Development and debugging
+ipdb>=0.13.13              # Interactive debugger
+pdb++>=0.10.3              # Enhanced Python debugger

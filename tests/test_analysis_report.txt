@@ -1,0 +1,32 @@
+================================================================================
+🧪 TEST RESULTS ANALYSIS REPORT
+================================================================================
+Generated: 2025-10-26 22:22:52
+
+📊 OVERALL SUMMARY
+----------------------------------------
+Total Tests:     11
+✅ Passed:       11 (100.0%)
+❌ Failed:       0
+⚠️  Errors:       0
+⏭️  Skipped:      0
+⏱️  Total Time:   0.85s
+
+🎉 STATUS: ALL TESTS PASSING! 🎉
+
+📋 TEST SUITE BREAKDOWN
+----------------------------------------
+✅ UNIT
+   Tests: 11 | Passed: 11 | Failed: 0 | Errors: 0
+   Time: 0.85s | Success Rate: 100.0%
+
+⚡ PERFORMANCE ANALYSIS
+----------------------------------------
+🐌 Slowest Tests:
+   1. TestInferenceLogic::test_model_loading_success - 0.096s
+   2. TestInferenceLogic::test_predict_price_logic - 0.006s
+   3. TestInferenceLogic::test_feature_engineering - 0.003s
+   4. TestInferenceLogic::test_batch_predict_logic - 0.003s
+   5. TestInferenceLogic::test_model_loading_failure - 0.001s
+
+📈 Average Test Time: 0.010s

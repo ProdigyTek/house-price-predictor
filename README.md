@@ -78,6 +78,20 @@ docker compose -f mlflow-docker-compose.yml up -d
 docker compose ps
 ```
 
+## Some debug tips here 
+docker run --rm -it housepricepredictor bash
+
+docker run -idtP housepricepredictor
+docker compose up
+docker compose build
+
+docker compose stop
+docker compose start
+docker compose down
+
+
+
+
 > 🐧 **Using Podman?** Use this instead:
 
 ```bash
@@ -163,7 +177,27 @@ curl -X POST "http://localhost:8000/predict" \
 
 Be sure to replace `http://localhost:8000/predict` with actual endpoint based on where its running. 
 
+## 📋 Test Suite Overview
+### 1. **Unit Tests** (`tests/unit/test_inference.py`)
+- Focus on core prediction logic with 11 test cases
+- 100% mocked dependencies for isolated testing
+### 2. **Integration Tests** (`tests/integration/test_docker_api.py`)
+- Validate Docker container lifecycle and end-to-end workflows
+### 3. **API Tests** (`tests/api/test_endpoints.py`)
+- Comprehensive coverage of API endpoints and error handling
+### 4. **Docker Tests**
+- Ensure container builds and runs correctly
+---
 
+## Breakdown: Modular Pipelines
+The project is structured into modular pipelines for clarity and maintainability:
+- **Data Pipeline**: Cleans and preprocesses raw data
+- **Feature Engineering Pipeline**: Transforms data and generates features
+- **Modeling Pipeline**: Trains models and logs experiments to MLflow
+---
+![alt text](image.png)
+
+![alt text](image-1.png)
 ## 🧠 Learn More About MLOps
 
 This project is part of the [**MLOps Bootcamp**](https://schoolofdevops.com) at School of DevOps, where you'll learn how to:
